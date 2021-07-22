@@ -1,0 +1,76 @@
+div {
+  box-sizing: border-box;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.app {
+  position: relative;
+  padding: 128px 0;
+  height: 100vh !important;
+  width: 100%;
+  box-sizing: border-box;
+  display: inline-flex;
+  overflow: hidden;
+
+  .mainWrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100% !important;
+    overflow-x: auto;
+
+    .main {
+      position: relative;
+      padding: 0 0 30px 30px;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      overflow-y: auto;
+
+      .mainInner {
+        padding-right: 30px;
+        position: relative;
+        width: 100%;
+        min-width: 1000px;
+      }
+    }
+  }
+
+  .caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: #707070;
+    font-weight: 600;
+  }
+
+  .header {
+    position: absolute;
+    top: 0;
+    height: 128px;
+    width: 100%;
+    background: #F2F3F4;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    height: 128px;
+    width: 100%;
+    background: #D4D5D6;
+  }
+
+  .sidebar {
+    min-width: 224px;
+    background: #E4E5E6;
+    height: 100%;
+  }
+}
+
+.field {
+  position: fixed;
+  bottom: 128px;
+  left: 224px;
+  width: calc(100% - 244px);
+}

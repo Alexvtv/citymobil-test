@@ -1,0 +1,38 @@
+.table {
+  .row {
+    position: relative;
+    color: #1F232E;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    min-height: 45px;
+    .rowParam {
+      cursor: pointer;
+      position: relative;
+      font-size: 13px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid rgba(198, 209, 221, 0.5);
+      min-height: 100%;
+      flex: 1;
+      text-align: center;
+      margin: 0;
+      padding: 0 15px;
+    }
+    .model {
+      cursor: auto;
+      justify-content: start;
+      text-align: left;
+    }
+  }
+  .rowHeader {
+    font-size: 12px;
+    font-weight: 500;
+    color: #7B8395;
+    .model {
+      cursor: pointer;
+    }
+  }
+}
